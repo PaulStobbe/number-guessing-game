@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlen-Rate-Spiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Zahlen-Rate-Spiel</h1>
+        <p class="description">Ich denke an eine Zahl zwischen 1 und 100. Kannst du sie erraten?</p>
+        
+        <div class="game-area">
+            <input type="number" id="guessInput" min="1" max="100" placeholder="Deine Schätzung...">
+            <button id="submitBtn">Raten!</button>
+        </div>
+        
+        <div class="feedback" id="feedback"></div>
+        <div class="stats">
+            <p>Versuche: <span id="attempts">0</span></p>
+            <p>Bisher geraten: <span id="guessHistory"></span></p>
+        </div>
+        
+        <button id="newGameBtn" class="new-game-btn" style="display: none;">Neues Spiel</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
